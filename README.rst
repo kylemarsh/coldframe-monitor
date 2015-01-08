@@ -2,7 +2,7 @@
 dual temperature monitor
 =========
 
-:seedling: Track and display two temperature variables.
+Track and display two temperature variables.
 
 Synopsis
 ========
