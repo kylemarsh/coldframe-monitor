@@ -2,7 +2,7 @@ from flask import abort, request, render_template
 from flask.ext.restful import Resource, reqparse
 import requests
 
-from coldframe import app, api, helpers, influx_db
+from coldframe import app, api, influx_db
 
 
 class ReportTempsV0(Resource):
@@ -45,7 +45,7 @@ class ReportTempsV0(Resource):
         try:
             result = dbconn.write_points(series)
         except Exception as e:
-            import pdb; pdb.set_trace()
+            #TODO: Log exception (and data?) to file?
             raise e
 
         return result

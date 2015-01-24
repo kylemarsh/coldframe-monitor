@@ -1,0 +1,7 @@
+POST /api/v0/report_temps HTTP/1.1
+Host: 127.0.0.1:5000
+Connection: close
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 49
+
+token=DEADBEEF&bottom=22.437500&ambient=22.429199
