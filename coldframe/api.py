@@ -60,6 +60,6 @@ def get_wunderground_data():
     data = resp.json()['current_observation']
     interesting_data = ['observation_epoch', 'weather', 'temp_c',
             'dewpoint_c', 'precip_today_in', 'pressure_mb',
-            'relative_humidity', 'solarradiation', 'wind_degrees', 'wind_kph',
+            'relative_humidity', 'wind_degrees', 'wind_kph',
             'wind_gust_kph', 'wind_string', 'windchill_c']
     return {k: data[k] for k in interesting_data}
